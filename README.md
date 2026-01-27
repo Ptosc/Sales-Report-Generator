@@ -1,7 +1,7 @@
-````markdown
+```markdown
 # 📈 Sales Report Generator
 
-Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, automatisch bereinigen, Umsatz berechnen, Insights generieren und als Excel Report exportieren.  
+Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, automatisch bereinigen, Umsatz berechnen, Insights generieren und als Excel-Report exportieren.
 
 ---
 
@@ -12,7 +12,7 @@ Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, a
 - 🏆 Top Produkte Analyse  
 - 📊 Monatlicher Umsatz als Balkendiagramm  
 - 🗂 Kategorie-Statistiken  
-- 📄 Export als Excel Report (mehrere Sheets)  
+- 📄 Export als Excel-Report (mehrere Sheets)  
 
 ---
 
@@ -20,9 +20,12 @@ Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, a
 
 **Beispiel:**
 
-| Datum       | Produkt | Kategorie   | Preis   | Verkäufe |
-|------------|--------|------------|--------|----------|
-| 2025-10-23 | iPhone | Elektronik | 999.99 | 3        |
+```
+
+Datum,Produkt,Kategorie,Preis,Verkäufe
+2025-10-23,iPhone,Elektronik,999.99,3
+
+````
 
 **Spaltenbeschreibung:**
 
@@ -69,29 +72,25 @@ Der Browser öffnet automatisch: [http://localhost:8501](http://localhost:8501)
 
 ## 🛠 Funktionen
 
-| Funktion               | Beschreibung        |
-| ---------------------- | ------------------- |
-| `clean_data()`         | Datenbereinigung    |
-| `calc_sales_volume()`  | Umsatz berechnen    |
-| `get_top_products()`   | Top N Produkte      |
-| `months_analysis()`    | Monatsumsatz        |
-| `get_category_stats()` | Kategorie-Aggregate |
+* `clean_data()` – Datenbereinigung
+* `calc_sales_volume()` – Umsatz berechnen
+* `get_top_products()` – Top N Produkte
+* `months_analysis()` – Monatsumsatz
+* `get_category_stats()` – Kategorie-Aggregate
 
 ---
 
 ## 📊 Excel Export
 
-| Sheet        | Inhalt                            |
-| ------------ | --------------------------------- |
-| Top Produkte | Umsatzstärkste Produkte           |
-| Kategorien   | Aggregierte Kategorie-Statistiken |
-| Monate       | Monatliche Umsätze                |
+* **Top Produkte** – Umsatzstärkste Produkte
+* **Kategorien** – Aggregierte Kategorie-Statistiken
+* **Monate** – Monatliche Umsätze
 
 ---
 
-### Optional 💡
+## 💡 Optional
 
 * Demo-Daten für erste Tests verfügbar
-* Streamlit Widgets nutzen für interaktive Filter
+* Interaktive Streamlit Widgets für Filter nutzen
 * Balkendiagramme und Pivot-Tabellen für bessere Visualisierung
 
