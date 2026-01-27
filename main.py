@@ -3,12 +3,6 @@ import streamlit as st
 from clean_data import clean_data
 import io
 
-# Klares Ziel für heute: 
-
-# ---> Finish & Push
-
-# ---> Reflektieren 15 min 
-
 def calc_sales_volume(df):
     df['Umsatz'] = df['Verkäufe'] * df['Preis']
     return df
@@ -28,7 +22,6 @@ def get_category_stats(df):
     stats.rename(columns={'Preis': 'Durchschnittspreis'}, inplace=True)
     return stats
 
-# Füge st.bar_chart(monate) für visuelle Monatsanalyse hinzu
 def months_analysis(df):
     # Daten in Monate aufteilen
     df['Jahr_Monat'] = df['Datum'].dt.to_period('M')
