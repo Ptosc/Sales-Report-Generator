@@ -1,4 +1,4 @@
-```markdown
+
 # 📈 Sales Report Generator
 
 Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, automatisch bereinigen, Umsatz berechnen, Insights generieren und als Excel-Report exportieren.
@@ -20,7 +20,7 @@ Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, a
 
 **Beispiel:**
 
-```
+
 
 Datum,Produkt,Kategorie,Preis,Verkäufe
 2025-10-23,iPhone,Elektronik,999.99,3
