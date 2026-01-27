@@ -25,7 +25,6 @@ Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, a
 Datum,Produkt,Kategorie,Preis,Verkäufe
 2025-10-23,iPhone,Elektronik,999.99,3
 
-````
 
 **Spaltenbeschreibung:**
 
