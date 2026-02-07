@@ -59,13 +59,10 @@ pip install streamlit pandas xlsxwriter
 
 ---
 
-## ▶️ Starten
+# Streamlit-App-Link:
+https://preis-anker-generator-xbciwnlnudfkrvdcbhzufn.streamlit.app
 
-```bash
-streamlit run main.py
-```
-
-Der Browser öffnet automatisch: [http://localhost:8501](http://localhost:8501)
+⚠️ Läuft auf Streamlit Cloud, kann nach Inaktivität kurz „einschlafen“.
 
 ---
 
