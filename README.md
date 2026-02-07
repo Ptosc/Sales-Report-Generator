@@ -60,7 +60,7 @@ pip install streamlit pandas xlsxwriter
 ---
 
 # Streamlit-App-Link:
-https://preis-anker-generator-xbciwnlnudfkrvdcbhzufn.streamlit.app
+https://sales-report-generator-4dj54dk5xhcdbuzqqexh5e.streamlit.app
 
 ⚠️ Läuft auf Streamlit Cloud, kann nach Inaktivität kurz „einschlafen“.
 
