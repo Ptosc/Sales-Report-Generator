@@ -1,92 +1,64 @@
+## Warum ich das gebaut habe
 
-# 📈 Sales Report Generator
+Ich habe das Projekt hauptsächlich gebaut, um Pandas besser zu verstehen.
 
-Ein schlankes **Streamlit-Tool** zur Analyse von Verkaufsdaten: CSV hochladen, automatisch bereinigen, Umsatz berechnen, Insights generieren und als Excel-Report exportieren.
+Ich hatte das Gefühl, dass ich zwar pandas Code schreiben kann, aber nicht wirklich verstehe, was mit den Daten im Hintergrund passiert. Deshalb wollte ich etwas Eigenes bauen, wo ich gezwungen bin, mich damit auseinanderzusetzen.
 
----
+⸻
 
-## 🚀 Features
+Was schwierig war
 
-- 📂 CSV Upload oder Demo-Daten  
-- 💰 Automatische Umsatzberechnung (Preis × Verkäufe)  
-- 🏆 Top Produkte Analyse  
-- 📊 Monatlicher Umsatz als Balkendiagramm  
-- 🗂 Kategorie-Statistiken  
-- 📄 Export als Excel-Report (mehrere Sheets)  
+Am meisten hat mich groupby() beschäftigt.
 
----
+Nicht unbedingt die fuktion selbst, sondern zu verstehen was für ein Objekt daraus entsteht:
+	•	Wann ist es noch ein DataFrame?
+	•	Wann wird es eine Series?
 
-## 📝 Erwartetes CSV-Format
+Ich musste öfter stoppen und mir die Daten angucken, um nicht komplett den Überblick zu verlieren.
 
-**Beispiel:**
+⸻
 
+Was gut funktioniert hat
 
+Eine Sache, die überraschend gut funktioniert hat waren kleine Funktionen.
 
-Datum,Produkt,Kategorie,Preis,Verkäufe
-2025-10-23,iPhone,Elektronik,999.99,3
+Am Anfang war ich eher versucht, größere Logikblöcke zu bauen. Das wurde schnell unübersichtlich.
+Erst als ich angefangen habe, alles in kleine Schritte zu zerlegen, wurde es kontrollierbar.
 
+⸻
 
-**Spaltenbeschreibung:**
+Was ich heute anders machen würde
 
-- **Datum** – Datum des Verkaufs  
-- **Produkt** – Name des Produkts  
-- **Kategorie** – Produktkategorie  
-- **Preis** – Preis pro Einheit  
-- **Verkäufe** – Anzahl der Verkäufe  
+Die UI ist nicht gut strukturiert:
+Der Upload ist aktuell in der Mitte und vermischt sich mit dem Report.
+Ich würde das klar trennen, wahrscheinlich über eine Sidebar damit der Nutzer besser versteht was Input und was Output ist.
 
----
+⸻
 
-## ⚙️ Installation
+Für wen das gedacht ist
 
-**Repository klonen:**
+Für Leute, die Verkaufsdaten auswerten wollen, ohne alles manuell zu machen.
 
-```bash
-git clone <repo-url>
-cd sales-report-generator
-````
+Ist kein fertiges Produkt, eher ein Werkzeug oder Ausgangspunkt.
 
-**Dependencies installieren:**
+⸻
 
-```bash
-pip install -r requirements.txt
-```
+Ehrliche Schwächen
+	•	Die Spaltennamen müssen ziemlich genau passen
+	•	Wenig flexibel bei unterschiedlichen Datensätzen
+	•	UI ist eher funktional als durchdacht
 
-Falls kein `requirements.txt` existiert:
+Ich habe versucht, die Spalten zu bereinigen, aber am Ende hängt es immer noch an bestimmten Begriffen.
 
-```bash
-pip install streamlit pandas xlsxwriter
-```
+⸻
 
----
+Was ich daraus mitgenommen habe
+	•	Zu komplizierte Lösungen machen alles nur schwerer
+	•	Kleine Schritte/Funktionen sind langsamer am Anfang, aber sparen viel Zeit später
 
-# Streamlit-App-Link:
-https://sales-report-generator-4dj54dk5xhcdbuzqqexh5e.streamlit.app
+⸻
 
-⚠️ Läuft auf Streamlit Cloud, kann nach Inaktivität kurz „einschlafen“.
-
----
-
-## 🛠 Funktionen
-
-* `clean_data()` – Datenbereinigung
-* `calc_sales_volume()` – Umsatz berechnen
-* `get_top_products()` – Top N Produkte
-* `months_analysis()` – Monatsumsatz
-* `get_category_stats()` – Kategorie-Aggregate
-
----
-
-## 📊 Excel Export
-
-* **Top Produkte** – Umsatzstärkste Produkte
-* **Kategorien** – Aggregierte Kategorie-Statistiken
-* **Monate** – Monatliche Umsätze
-
----
-
-## 💡 Optional
-
-* Demo-Daten für erste Tests verfügbar
-* Interaktive Streamlit Widgets für Filter nutzen
-* Balkendiagramme und Pivot-Tabellen für bessere Visualisierung
-
+Nächste Schritte
+	•	Spalten flexibler erkennen (zb. Mapping statt fixer Namen)
+	•	UI besser aufteilen
+	•	insgesamt robuster gegen unterschiedliche Daten machen
