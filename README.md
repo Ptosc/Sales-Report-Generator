@@ -1,72 +1,49 @@
-Warum ich das gebaut habe
+# Warum ich das gebaut habe
 
-Ich hab das Projekt gebaut, weil ich Pandas besser verstehen wollte.
+Ich hab das Projekt gemacht, um Pandas besser zu checken.
+Konnte zwar Sachen schreiben die liefen, aber oft ohne wirklich zu verstehen was passiert.
+Deshalb wollte ich mal was eigenes bauen und mich richtig damit auseinandersetzen.
 
-Ich konnte zwar Sachen damit machen, aber oft eher so nach dem Prinzip: funktioniert halt irgendwie.
-Ich wollte weg von diesem Gefühl und wirklich verstehen, was mit den Daten passiert.
+Was schwierig war
 
-⸻
+groupby() hat mich echt beschäftigt.
+Nicht weil die Funktion schwer ist, sondern weil ich nie genau wusste, was danach zurückkommt.
+Mal DataFrame, mal Series, manchmal saß ich einfach da und hab gedacht: hä, was ist das jetzt?
+Ich musste oft stoppen und die Daten ausgeben, sonst wäre ich komplett raus gewesen.
 
-## Was schwierig war
+Was gut funktioniert hat
 
-Am meisten hat mich groupby() beschäftigt.
+Kleine Funktionen.
+Am Anfang wollte ich alles in große Blöcke packen, dachte das wäre sauberer,
+aber schnell unübersichtlich.
+Kleine Schritte haben es einfacher gemacht, Fehler schneller zu finden.
 
-Nicht unbedingt die Funktion selbst, sondern eher das Verständnis, was danach eigentlich zurückkommt.
-Mal ist es ein DataFrame, mal eine Series und manchmal sitze ich davor und denke mir kurz: hä?
+Was ich anders machen würde
 
-Ich musste öfter stoppen und mir die Zwischenschritte anschauen, sonst wäre ich komplett raus gewesen.
+Die UI ist noch nicht optimal.
+Upload ist einfach irgendwo und vermischt sich mit dem Report.
+Würde ich heute über Sidebar trennen, dann sieht man sofort Input vs Output.
 
-⸻
+Für wen das gedacht ist
 
-## Was gut funktioniert hat
+Für Leute, die Verkaufsdaten auswerten wollen ohne alles manuell zu machen.
+Ist kein fertiges Produkt, eher ein Ausgangspunkt.
 
-Kleine Funktionen haben mir echt geholfen.
+Schwachpunkte
 
-Am Anfang wollte ich größere Blöcke bauen, weil ich dachte, das ist „sauberer“.
-War aber schnell unübersichtlich.
+Spaltennamen müssen ziemlich genau passen
+Wenig flexibel bei anderen Datensätzen
+UI eher funktional als durchdacht
+Habe versucht, die Spalten zu bereinigen, aber richtig flexibel ist es noch nicht.
 
-In kleinere Schritte zu gehen war am Ende deutlich entspannter und nachvollziehbarer.
+Was ich gelernt habe
 
-⸻
+Zu kompliziert denken macht es nur schwerer.
+Am Anfang hab ich alles unnötig kompliziert gemacht.
+Kleine Schritte fühlen sich langsam an, sparen aber später echt Zeit.
 
-## Was ich anders machen würde
+Nächste Schritte
 
-Die UI ist nicht wirklich klar strukturiert.
-
-Der Upload ist aktuell einfach irgendwo und vermischt sich mit dem Output.
-Das würde ich trennen, wahrscheinlich über eine Sidebar, damit klarer ist, was Input und was Ergebnis ist.
-
-⸻
-
-## Für wen das gedacht ist
-
-Für Leute, die Verkaufsdaten auswerten wollen, ohne alles manuell zu machen.
-
-Ist aber kein fertiges Produkt, eher ein Ausgangspunkt.
-
-⸻
-
-## Schwachpunkte
-	•	Spaltennamen müssen ziemlich genau passen
-	•	wenig flexibel bei anderen Datensätzen
-	•	UI eher funktional als durchdacht
-
-Ich hab versucht, die Spalten zu bereinigen, aber komplett flexibel ist es noch nicht.
-
-⸻
-
-## Was ich gelernt habe
-
-Zu komplizierte Lösungen machen es nur schwerer.
-
-Ich hab am Anfang vieles unnötig kompliziert gedacht.
-Einfacher wäre oft besser gewesen.
-
-Und kleine Schritte fühlen sich zwar langsamer an, sparen aber später Zeit.
-
-⸻
-
-## Nächste Schritte
-	•	Spalten flexibler erkennen (z.B. Mapping statt feste Namen)
-	•	UI besser strukturieren
-	•	robuster für unterschiedliche Datensätze machen
+Spalten flexibler erkennen (Mapping statt feste Namen)
+UI besser strukturieren
+Robuster für verschiedene Daten mache
